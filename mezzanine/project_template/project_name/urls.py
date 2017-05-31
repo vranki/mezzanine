@@ -6,6 +6,7 @@ from django.contrib import admin
 from django.views.i18n import set_language
 
 from mezzanine.core.views import direct_to_template
+from mezzanine.blog import views as blog_views
 from mezzanine.conf import settings
 
 
@@ -64,7 +65,7 @@ urlpatterns += [
     # page tree in the admin if it was installed.
     # NOTE: Don't forget to import the view function too!
 
-    # url("^$", mezzanine.blog.views.blog_post_list, name="home"),
+    # url("^$", blog_views.blog_post_list, name="home"),
 
     # MEZZANINE'S URLS
     # ----------------
